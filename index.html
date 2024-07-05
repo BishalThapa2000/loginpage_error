@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style type="text/css">
+        body {
+            background: lightgreen;
+            color: skyblue;
+            font-family: Arial, sans-serif; /* Adding a font family for better readability */
+        }
+
+        table {
+            background: lightyellow;
+            border-collapse: collapse; /* Ensuring borders collapse properly */
+            width: 300px; /* Setting a fixed width for the table */
+            margin: auto; /* Centering the table using margin */
+        }
+
+        table, th, td {
+            border: 1px solid black; /* Adding border for better visibility */
+            padding: 5px; /* Adding padding inside cells for better spacing */
+        }
+
+        form {
+            margin: 0; /* Removing default margin from form */
+            padding: 0; /* Removing default padding from form */
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <tr>
+            <td>
+                <form name="form1" action="cheklogin.php" method="POST">
+                    <table width="100%" cellpadding="3" cellspacing="1" bgcolor="#FFFFFF">
+                        <tr>
+                            <td colspan="3"><strong>Member Login</strong></td>
+                        </tr>
+                        <tr>
+                            <td width="78">Username</td> <!-- Added "Username" label -->
+                            <td>:</td> <!-- Changed to a colon for alignment -->
+                            <td><input name="username" type="text" id="username" maxlength="49"></td>
+                        </tr>
+                        <tr>
+                            <td>Password</td>
+                            <td>:</td>
+                            <td><input name="password" type="password" id="password" maxlength="49"></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td><input type="submit" value="Login" name="submit"></td> <!-- Changed "login" to "Login" -->
+                        </tr>
+                    </table>
+                </form>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
